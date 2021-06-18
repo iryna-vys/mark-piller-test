@@ -1,0 +1,40 @@
+html {
+ font-family: 'Dosis', sans-serif;;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 50px);
+  gap: 10px;
+}
+
+.gallery-img:nth-child(4n + 1) {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.gallery-img:nth-child(4n + 2),
+.gallery-img:nth-child(4n + 3),
+.gallery-img:nth-child(4n + 4) {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.gallery-img {
+  object-fit: contain;
+}
