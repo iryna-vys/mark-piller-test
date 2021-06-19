@@ -10,32 +10,47 @@
   <script src="main.js" defer></script>
   <title>Document</title>
 </head>
-<body class="page">
+<body class="page light-theme">
   <header class="header">
     <a class="header-link" href="#">Backendless</a>
     <div class="header-theme-toggler">
-      <div class="desktop-theme-toggler">
-        <select name="theme" id="">
-          <option value="">
-            Light Them
+      <div class="mobile-theme-toggler">
+        <select class="theme-select" name="theme" id="">
+          <option value="light-theme" selected>
+            Light Theme
           </option>
-          <option value="">
+          <option value="dark-theme">
             Dark Theme
           </option>
-          <option value="">
+          <option value="backendless-theme">
             Backendless Theme
           </option>
         </select>
       </div>
       <div class="tablet-theme-toggler">
-        <input type="button">
-        <input type="button">
-        <input type="button">
+        <button class="light-theme-button" type="button">
+          Light Theme
+        </button>
+        <button class="dark-theme-button" type="button">
+          Dark Theme
+        </button>
+        <button class="backendless-theme-button" type="button">
+          Backendless Theme
+        </button>
       </div>
-      <div class="mobile-theme-toggler">
-        <input type="radio">
-        <input type="radio">
-        <input type="radio">
+      <div class="desktop-theme-toggler">
+        <label>
+          <input class="light-theme-radio" type="radio" name="theme" checked>
+          Light Them
+        </label>
+        <label>
+          <input class="dark-theme-radio" type="radio" name="theme">
+          Dark Them
+        </label>
+        <label>
+          <input class="backendless-theme-radio" type="radio" name="theme">
+          Backendless Them
+        </label>
       </div>
     </div>
   </header>
@@ -44,8 +59,6 @@
       Backendless Gallery
     </h1>
     <div class="gallery">
-      <img class="gallery-img" src="http://placehold.it/1000x600" alt="Plaseholder">
-      <img class="gallery-img" src="http://placehold.it/1000x600" alt="Plaseholder">
       <img class="gallery-img" src="http://placehold.it/1000x600" alt="Plaseholder">
       <img class="gallery-img" src="http://placehold.it/1000x600" alt="Plaseholder">
       <img class="gallery-img" src="http://placehold.it/1000x600" alt="Plaseholder">
