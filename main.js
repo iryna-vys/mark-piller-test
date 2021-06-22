@@ -77,7 +77,7 @@ const modalImgs = document.querySelectorAll('.modal-content');
 const captionTexts = document.querySelectorAll('.modal-caption');
 imgs.forEach((img, i) => {
   img.onclick = function(){
-    modals[i].style.display = 'block';
+    modals[i].classList.remove('hidden');
     modalImgs[i].src = this.src;
     captionTexts[i].innerHTML = this.alt;
   }
@@ -86,7 +86,6 @@ imgs.forEach((img, i) => {
 const spans = document.querySelectorAll('.close');
 spans.forEach((span, i) => {
   span.onclick = function() {
-    modals[i].style.display = 'none';
+    modals[i].classList.add('hidden');
   }
 });
-

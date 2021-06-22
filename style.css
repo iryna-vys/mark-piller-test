@@ -10,7 +10,11 @@ body {
   margin: 0;
 }
 
-/* Page Grid */
+.hidden {
+  display: none;
+}
+
+/* Page Grid Fixed header and footer*/
 
 .container {
   height: 100vh;
@@ -263,10 +267,6 @@ body {
   }
 }
 
-.hidden {
-  display: none;
-}
-
 .footer-link {
   padding: 10px;
   font-size: 18px;
@@ -400,7 +400,6 @@ body {
 
 /* Modal */
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -463,4 +462,3 @@ body {
       width: 80%;
   }
 }
-
