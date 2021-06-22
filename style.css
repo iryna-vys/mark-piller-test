@@ -196,6 +196,18 @@ body {
   animation: bounce-top 2s infinite;
 }
 
+@media (min-width: 640px) {
+  .page-title {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .page-title {
+    font-size: 54px;
+  }
+}
+
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
